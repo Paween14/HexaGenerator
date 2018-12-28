@@ -1,0 +1,63 @@
+/* ================================================= 
+  Media Queries
+================================================== */
+@media only screen and (max-width : 680px) {
+    .btn {
+        display: block;
+        margin: 15px auto;
+        width: 180px;
+    }
+
+    /* =================== Div Hexa ====================== */
+    .text {
+        text-align: left;
+    }
+
+    .copy-btn {
+        position: absolute ;
+        top: 35%;
+        right:15%;
+    }    
+}
+
+@media only screen and (min-width : 680px) {
+    /* header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        display: flex;
+    } */
+
+    .btn {
+        display: in-block;
+    }
+
+    /* =================== Div Hexa ====================== */
+    #wrapper-main {
+        display: grid;
+        grid-template-columns: repeat( 5 , minmax(50px,1fr));
+        grid-template-rows: repeat( auto-fit , 140px);
+    }
+
+    .wrapper-div {
+        width: 100%;
+        height: 140px;
+        position: relative ;
+
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .copy-btn{
+        margin: 10px 0;
+        padding: 5px 10px;
+        position: absolute ;
+        bottom: 5%;
+        left:50%;
+        transform: translate(-50%, 0%);
+    }
+    
+}
